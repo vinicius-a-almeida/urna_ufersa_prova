@@ -19,29 +19,29 @@ void mario ();
 int main (){
 setlocale(LC_ALL, "");
 system("color 1F");	
-printf("\n       Universidade Federal Rural do Semi-Árido (UFERSA)         \n\n");
-printf("            Bacharelado em Tecnologia da Informação               \n\n");
-printf("             Disciplina: LABORATÓRIO DE ALGORITMOS                \n\n");
+printf("\n       Universidade Federal Rural do Semi-ï¿½rido (UFERSA)         \n\n");
+printf("            Bacharelado em Tecnologia da Informaï¿½ï¿½o               \n\n");
+printf("             Disciplina: LABORATï¿½RIO DE ALGORITMOS                \n\n");
 printf("                    Professor: Dyego Magno                        \n\n");
 printf("             Discente: Roberto Fernandes Rocha                    \n\n");
 printf("             Discente: Vinicius Anacleto de Almeida               \n\n");
 system ("pause");
-    int opcao, fim_t=0, constante=0, q_vots=0, q_disc, senha_de_acesso=123, i, voto_david=0, voto_vini=0, voto_polly=0, voto_karla=0, voto_dyego=0, voto_rep_branc=0, vot_rep_nul=0;
+    int opcao, fim_t=0, q_vots=0, q_disc, senha_de_acesso=123, i, voto_david=0, voto_vini=0, voto_polly=0, voto_karla=0, voto_dyego=0, voto_rep_branc=0, vot_rep_nul=0;
     int voto_had=0, voto_lav=0, voto_pres_nul=0, voto_pres_branc=0, volta=1, sant, sant_esc=1, nulo_1;
     char voto_rep[6], voto_pres[3];
-    while(constante==0){
+    while(1==1){
         system("color 07");
         system("clear || cls");
         printf("Para definir quantidade de votantes ---------- {1} \n\n");
          
-        printf("Para iniciar votação ------------------------- {2} \n\n");
+        printf("Para iniciar votaï¿½ï¿½o ------------------------- {2} \n\n");
 
         printf("Para contabilizar votos ---------------------- {3} \n\n");
 
         printf("Para sair ------------------------------------ {4} \n\n");
 
         printf("Para os santinhos ---------------------------- {5} \n\n");
-        printf("DIGITE A SUA OPÇÃO >: ");
+        printf("DIGITE A SUA OPï¿½ï¿½O >: ");
         scanf("%d", &opcao);
         switch (opcao){
         case(1):
@@ -51,7 +51,7 @@ system ("pause");
                 scanf("%d", &q_disc);
                 if(q_disc<31){
  	
-                    printf("\na votação só sera realizada com no minimo 31 discentes!\n");
+                    printf("\na votaï¿½ï¿½o sï¿½ sera realizada com no minimo 31 discentes!\n");
                     printf("pressione enter para continuar");
                     getchar();getchar();
                     system("clear || cls");
@@ -96,7 +96,7 @@ system ("pause");
                     nulo_1++;
                 }else if(strcmp(voto_rep, "43210")==0){
                     printf("seu voto foi confirmado\n");
-                    printf("você votou em Karla Float\n\n");
+                    printf("vocï¿½ votou em Karla Float\n\n");
                     karla ();
                     system ("pause");
                     system("clear || cls");
@@ -104,14 +104,14 @@ system ("pause");
                     nulo_1++;
                 }else if(strcmp(voto_rep, "48444")==0){
                     printf("seu voto foi confirmado\n");
-                    printf("você votou em Dyego main\n\n");
+                    printf("vocï¿½ votou em Dyego main\n\n");
                     dyego ();
                     system ("pause");
                     system("clear || cls");
                     voto_dyego++;
                     nulo_1++;
                 }else if(strcmp(voto_rep, "00000")==0){
-                    printf("você votou em branco\n\n");
+                    printf("vocï¿½ votou em branco\n\n");
                     voto_rep_branc++;
                     nulo_1++;
                 }if(nulo_1==0){
@@ -137,7 +137,7 @@ system ("pause");
                 voto_lav=0;
                  nulo_1++;
             }else if(strcmp(voto_pres, "00")==0){
-                printf("você votou em branco\n\n");
+                printf("vocï¿½ votou em branco\n\n");
                 voto_pres_branc++;
                  nulo_1++;
             }if(nulo_1==0){
@@ -175,7 +175,7 @@ system ("pause");
             printf("||                                                     ||\n");
             printf("+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+\n");
             printf(" _______________________________________________________ \n");
-            printf("|                + APURAÇÃO DOS VOTOS +                 |\n");
+            printf("|                + APURAï¿½ï¿½O DOS VOTOS +                 |\n");
             printf("| > total de votos para David Else:                  %d |\n", voto_david);
             printf("| > total de votos para Vinicius while:              %d |\n", voto_vini);
             printf("| > total de votos para pollyana Return:             %d |\n", voto_polly);
@@ -188,13 +188,13 @@ system ("pause");
             printf("---------------------------------------------------------\n\n\n");
             printf("+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+\n");
             printf("||                                                     ||\n");
-            printf("||           \\/   PRESIDENTE DO GRÊMIO   \\/          ||\n");
+            printf("||           \\/   PRESIDENTE DO GRï¿½MIO   \\/          ||\n");
             printf("||                                                     ||\n");
             printf("+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+\n");
             printf(" _______________________________________________________ \n");
-            printf("|                + APURAÇÃO DOS VOTOS +                 |\n");
+            printf("|                + APURAï¿½ï¿½O DOS VOTOS +                 |\n");
             printf("| > total de votos para Hadija Printf:               %d |\n", voto_had);
-            printf("| > total de votos Lavínia Scanf:                   %d |\n", voto_lav);
+            printf("| > total de votos Lavï¿½nia Scanf:                   %d |\n", voto_lav);
             printf("|_______________________________________________________|\n");
             printf("\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/ \n");
             printf("---------------------------------------------------------\n");
@@ -205,17 +205,17 @@ system ("pause");
             system("pause");
             break;
         case(4):
-            printf("obrigado por usar nossos serviços de eleição\n atenciosamente: DUPLA DINAMICA >:");
+            printf("obrigado por usar nossos serviï¿½os de eleiï¿½ï¿½o\n atenciosamente: DUPLA DINAMICA >:");
             cara ();
             mario ();
             return 0;
         case(5):
             do{
             system("clear || cls");
-            printf("\n\t\t \\/ ATENÇÃO \\/ \n\n OS SANTINHOS SÓ SERÃO APENAS MOSTRADOS ANTES DE INICIAR A VOTAÇÃO \n\n");
-            printf("\t\t DIGITE A SUA OPÇÃO \n\n");
+            printf("\n\t\t \\/ ATENï¿½ï¿½O \\/ \n\n OS SANTINHOS Sï¿½ SERï¿½O APENAS MOSTRADOS ANTES DE INICIAR A VOTAï¿½ï¿½O \n\n");
+            printf("\t\t DIGITE A SUA OPï¿½ï¿½O \n\n");
             printf(" [1] SANTINHOS DOS REPRESENTANTES ESTUDANTIL\n\n");
-            printf(" [2] SANTINHOS DOS PRESIDENTES DO GRÊMIO ESTUDANTIL \n>: ");
+            printf(" [2] SANTINHOS DOS PRESIDENTES DO GRï¿½MIO ESTUDANTIL \n>: ");
             scanf("%d", &sant);
             if(sant== 1){
                     system("clear || cls");
@@ -230,8 +230,8 @@ system ("pause");
                     lav ();
             }else
                 erro();
-                printf("\n\ndeseja ver os santinhos mais uma vez? \n [0] sim\n [1] não \n>: ");
-                printf("DIGITE A SUA OPÇÃO >: ");
+                printf("\n\ndeseja ver os santinhos mais uma vez? \n [0] sim\n [1] nï¿½o \n>: ");
+                printf("DIGITE A SUA OPï¿½ï¿½O >: ");
                 scanf("%d", &sant_esc);
             }while(sant_esc == 0);
             break;
@@ -247,7 +247,7 @@ void tela_2(){
 system("color 70");
 printf("----------------------------------------------------------------------------------------------------\n");
 printf("||                                               ||                                               ||\n");
-printf("||       \\/    ELEIÇÕES ESTUDANTIS     \\/      ||        \\/    JUSTIÇA ESTUDANTIL    \\/       ||\n");
+printf("||       \\/    ELEIï¿½ï¿½ES ESTUDANTIS     \\/      ||        \\/    JUSTIï¿½A ESTUDANTIL    \\/       ||\n");
 printf("||                                               ||                                               ||\n");
 printf("||                                               ||                                               ||\n");               
 printf("||                                               ||                                               ||\n");                                                                                                                                                                                                                             
@@ -256,7 +256,7 @@ printf("||                                               ||                     
 printf("||                                               ||                  4    5    6                  ||\n");
 printf("||                 SEU VOTO PARA                 ||                                               ||\n");
 printf("||                                               ||                  7    8    9                  ||\n");
-printf("||            - PRESIDENTE DO GRÊMIO -           ||                                               ||\n");
+printf("||            - PRESIDENTE DO GRï¿½MIO -           ||                                               ||\n");
 printf("||                                               ||                       0                       ||\n");
 printf("||                                               ||                                               ||\n");
 printf("||                                               ||          |BRANCO| |CORRIGE| |COMFIRMA|        ||\n");
@@ -267,7 +267,7 @@ system("clear || cls");
 system("color 70");
 printf("----------------------------------------------------------------------------------------------------\n");
 printf("||                                               ||                                               ||\n");
-printf("||              ELEIÇÕES  ESTUDANTIS             ||                JUSTIÇA ESTUDANTIL             ||\n");
+printf("||              ELEIï¿½ï¿½ES  ESTUDANTIS             ||                JUSTIï¿½A ESTUDANTIL             ||\n");
 printf("||                                               ||                                               ||\n");
 printf("||                                               ||                                               ||\n");               
 printf("||                                               ||                                               ||\n");                                                                                                                                                                                                                             
@@ -293,7 +293,7 @@ printf("|                                  |  ()  |  | \n");
 printf("| NOME: ----------- David Else     | (||) |  | \n");
 printf("|                                  |  /\\  |  |\n");                                
 printf("|                                  | /  \\ |  |\n");            
-printf("| NÚMERO: --------- 12345          --------  | \n");                  
+printf("| Nï¿½MERO: --------- 12345          --------  | \n");                  
 printf("|                                            | \n");            
 printf(" ____________________________________________  \n");
 }
@@ -308,7 +308,7 @@ printf("|                                  |  ()  |  | \n");
 printf("| NOME: ----------- Vinicius While | (||) |  | \n");
 printf("|                                  |  /\\  |  |\n");                                
 printf("|                                  | /  \\ |  |\n");            
-printf("| NÚMERO: --------- 67890          --------  | \n");                  
+printf("| Nï¿½MERO: --------- 67890          --------  | \n");                  
 printf("|                                            | \n");            
 printf("|____________________________________________| \n");
 }
@@ -323,7 +323,7 @@ printf("|                                  | /()\\ |  |\n");
 printf("| NOME: ---------- Pollyana Return | (||) |  | \n");
 printf("|                                  |  /\\  |  |\n");                                
 printf("|                                  | /  \\ |  |\n");            
-printf("| NÚMERO: -------- 98765           --------  | \n");                  
+printf("| Nï¿½MERO: -------- 98765           --------  | \n");                  
 printf("|                                            | \n");            
 printf("|____________________________________________| \n");
 }
@@ -338,7 +338,7 @@ printf("|                                  | /()\\ |  |\n");
 printf("| NOME: ----------- Karla Float    | (||) |  | \n");
 printf("|                                  |  /\\  |  |\n");                                
 printf("|                                  | /  \\ |  |\n");            
-printf("| NÚMERO: --------- 43210          --------  | \n");                  
+printf("| Nï¿½MERO: --------- 43210          --------  | \n");                  
 printf("|                                            | \n");            
 printf("|____________________________________________|\n"); 
 }
@@ -353,7 +353,7 @@ printf("|                                  |  ()  |  | \n");
 printf("| NOME: -----------  Dyego Main    | (||) |  | \n");
 printf("|                                  |  /\\  |  |\n");                                
 printf("|                                  | /  \\ |  |\n");            
-printf("| NÚMERO: --------- 48444          --------  | \n");                  
+printf("| Nï¿½MERO: --------- 48444          --------  | \n");                  
 printf("|                                            | \n");            
 printf("|____________________________________________| \n"); 
 }
@@ -368,7 +368,7 @@ printf("|                                  | /()\\ |  |\n");
 printf("| NOME: ----------- Hadija Printf  | (||) |  | \n");
 printf("|                                  |  /\\  |  |\n");                                
 printf("|                                  | /  \\ |  |\n");            
-printf("| NÚMERO: --------- 04             --------  | \n");                  
+printf("| Nï¿½MERO: --------- 04             --------  | \n");                  
 printf("|                                            | \n");            
 printf("|____________________________________________| \n"); 
 }
@@ -380,10 +380,10 @@ printf("|                                            | \n");
 printf("| PARTIDO: -------- (UFERSA)         FOTO    | \n");
 printf("|                                  --------  | \n");
 printf("|                                  | /()\\ |  |\n");           
-printf("| NOME: ----------- Lavínia Scanf  | (||) |  | \n");
+printf("| NOME: ----------- Lavï¿½nia Scanf  | (||) |  | \n");
 printf("|                                  |  /\\  |  |\n");                                
 printf("|                                  | /  \\ |  |\n");            
-printf("| NÚMERO: --------- 08             --------  | \n");                  
+printf("| Nï¿½MERO: --------- 08             --------  | \n");                  
 printf("|                                            | \n");            
 printf("|____________________________________________| \n");
 }
